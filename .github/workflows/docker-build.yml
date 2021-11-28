@@ -1,8 +1,8 @@
-name: GitHub Actions Test
+name: ci
 on: 
         push:
                 branches:
-                        -'main'
+                        - 'main'
 
 jobs:
         github-actions-test:
