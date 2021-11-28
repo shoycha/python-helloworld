@@ -6,7 +6,6 @@ on:
 
 jobs:
         github-actions-test:
-                platforms: linux/amd64,linux/arm64
                 steps:
                    -
                         name: Set up QEMU
@@ -27,5 +26,6 @@ jobs:
                         with:
                                 context: .
                                 push: true
+                                platforms:linux/amd64,linux/arm64
                                 tags: shoycha/python-helloworld:latest
                         
