@@ -25,7 +25,7 @@ jobs:
                         uses: docker/build-push-action@v2
                         with:
                                 context: .
+                                platforms: linux/amd64,linux/arm64
                                 push: true
-                                platforms:linux/amd64,linux/arm64
                                 tags: shoycha/python-helloworld:latest
                         
